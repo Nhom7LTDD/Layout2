@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+
+
+    >
+    <ImageView
+        android:id="@+id/anhsp"
+        android:layout_width="80dp"
+        android:layout_height="72dp"
+        />
+     <TextView
+         android:id="@+id/tensp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/anhsp"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+
+         android:textAlignment="center"
+         android:textSize="20dp"
+         />
+    <ImageView
+        android:id="@+id/imagestock"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:id="@+id/cost"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tensp"
+        android:layout_toRightOf="@+id/anhsp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        android:textColor="#FFFFFF"
+        android:background="#FFb7bdcb"
+        android:gravity="center"
+
+        />
+    <ImageView
+        android:id="@+id/imagetime"
+        android:layout_width="12dp"
+        android:layout_height="17dp"
+        android:layout_toRightOf="@+id/cost"
+        android:layout_below="@+id/tensp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tensp"
+        android:layout_toRightOf="@+id/imagetime"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"
+        android:textColor="#FFc5c6c8"
+
+
+
+        />
+
+</RelativeLayout>

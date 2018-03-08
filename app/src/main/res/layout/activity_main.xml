@@ -1,0 +1,113 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+     xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:id="@+id/toplayout">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/toolbar"
+            android:scaleType="centerCrop"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wrap"
+        android:layout_below="@+id/toplayout"
+
+
+       >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listAlbum"
+            >
+
+        </ListView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/bottom"
+           android:layout_alignParentBottom="true"
+            android:background="#F0FFFF"
+            >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:src="@drawable/home"
+
+                android:layout_marginLeft="30dp"
+                android:id="@+id/home"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailhome"
+                android:layout_below="@+id/home"
+                android:layout_marginLeft="55dp"
+                android:text="Home"
+                android:textSize="12dp"
+                android:paddingBottom="1dp"
+                />
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:src="@drawable/chat"
+                android:id="@+id/chat"
+                android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inquiries"
+                android:textSize="12dp"
+                android:id="@+id/detailchat"
+                android:layout_below="@+id/chat"
+                android:layout_toRightOf="@+id/detailhome"
+                android:layout_marginLeft="75dp"
+                android:paddingBottom="1dp"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:src="@drawable/man"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:id="@+id/man"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textSize="12dp"
+                android:id="@+id/detailmen"
+                android:layout_below="@+id/man"
+                android:layout_toRightOf="@+id/detailchat"
+                android:layout_marginLeft="108dp"
+                android:paddingBottom="1dp"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
